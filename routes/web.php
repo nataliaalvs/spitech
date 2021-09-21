@@ -20,3 +20,7 @@ Route::get('/', function () {
 Route::get('/novo', function () {
     return view('home');
 });
+
+Route::get('/dashboard', function () {
+    return view('dashboard.dashboard');
+});
