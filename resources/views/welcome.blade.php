@@ -9,6 +9,7 @@
 <body>
     <div class="container">
         <h1>Seja bem vindo a spitech!</h1>
+        <h3>Uma nova plataforma para se aprofundar no mundo da informática</h3>
         <a href="{{ url('/dashboard') }}">Ir para o Dashboard!</a>
     </div>
 </body>

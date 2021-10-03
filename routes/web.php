@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CourseController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,3 +25,8 @@ Route::get('/novo', function () {
 Route::get('/dashboard', function () {
     return view('dashboard.dashboard');
 });
+
+
+Route::resource('course', CourseController::class);
+
+Route::delete('/course/{id}', 'CourseController@delete');
