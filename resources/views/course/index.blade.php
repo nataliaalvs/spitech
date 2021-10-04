@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>Todos os cursos</h1>
-
+    <a href="{{ route('course.create') }}">Criar novo</a>
     <table border='2'>
         <thead>
             <tr> 
@@ -30,12 +30,14 @@
                 {{$attribute->duration}}h
             </td>
             <td>
-            <a href="#" onclick="document.querySelector('#edit_{{ $attribute->id }}').submit();">Atualizar</a>
+                <a href="#" onclick="document.querySelector('#edit_{{ $attribute->id }}').submit();">Atualizar</a>
+                <a href="#" onclick="document.querySelector('#show_{{ $attribute->id }}').submit();">Mostrar</a>
 
             </td>
 
         </tr>
 <form id="edit_{{ $attribute->id }}" action="{{ route('course.edit', ['course'=>$attribute->id]) }}" method="GET"></form>
+<form id="show_{{ $attribute->id }}" action="{{ route('course.show', ['course'=>$attribute->id]) }}" method="GET"></form>
 
 
         @endforeach

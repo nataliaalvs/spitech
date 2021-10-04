@@ -7,6 +7,8 @@
     <title>Ver curso</title>
 </head>
 <body>
-    <h1>Curso</h1>
+    <h1>Curso {{ $course->name }}</h1>
+    <p>{{ $course->description }}</p>
+    <a href="{{ route('post.create') }}">Criar post sobre o curso</a>
 </body>
 </html>

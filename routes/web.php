@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CourseController;
+use App\Http\Controllers\PostController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,11 +17,8 @@ use App\Http\Controllers\CourseController;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('home');
 
-Route::get('/novo', function () {
-    return view('home');
-});
 
 Route::get('/dashboard', function () {
     return view('dashboard.dashboard');
@@ -29,4 +27,5 @@ Route::get('/dashboard', function () {
 
 Route::resource('course', CourseController::class);
 
-Route::delete('/course/{id}', 'CourseController@delete');
+Route::resource('post', PostController::class);
+

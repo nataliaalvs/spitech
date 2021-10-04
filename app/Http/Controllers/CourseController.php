@@ -12,9 +12,9 @@ use App\Models\Course;
 class CourseController extends Controller{
 
     public function index(){
-
         $courses = Course::all(); 
         return view('course.index', ['courses'=>$courses]);
+        
     }
 
     public function create(){
@@ -38,7 +38,9 @@ class CourseController extends Controller{
     }
     
     public function show($id){
-        return view('course.show');
+        $course = Course::find($id);
+        return view('course.show', ['course'=>$course]);
+
     }
 
     public function edit($id){
@@ -53,9 +55,12 @@ class CourseController extends Controller{
         $course->description = $request->post('description');
         $course->price = $request->post('price');
         $course->duration = $request->post('duration');
+        $course->save(); //salva no banco 
+
+        return redirect()->to(route('course.index'));
     }
 
     public function destroy($id){
-    
+        
     }
 }

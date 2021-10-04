@@ -15,7 +15,7 @@
     <input name="name" id="name" type="text" autocomplete="off" value="{{$course->name}}"> <br> <br>
 
     <label for="description">Descrição</label> <br>
-    <textarea name="description" id="description" cols="30" rows="10" value="{{$course->description}}"></textarea> <br><br>
+    <textarea name="description" id="description" cols="30" rows="10" value="{{ $course->description }}">{{ $course->description }}</textarea> <br><br>
 
     <label for="price">Valor</label> <br>
     <input type="number" name="price" id="price" min="0" value="{{$course->price}}"> <br><br>
