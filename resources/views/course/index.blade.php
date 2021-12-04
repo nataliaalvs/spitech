@@ -42,6 +42,7 @@
 
         @endforeach
         </tbody>
-        </table>
+    </table>
+    <p>Template shop</p>
 </body>
 </html>

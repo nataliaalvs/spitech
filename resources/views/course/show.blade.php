@@ -10,5 +10,7 @@
     <h1>Curso {{ $course->name }}</h1>
     <p>{{ $course->description }}</p>
     <a href="{{ route('post.create') }}">Criar post sobre o curso</a>
+    <p>Template admin</p>
+
 </body>
 </html>

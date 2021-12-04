@@ -12,5 +12,7 @@
         <h3>Uma nova plataforma para se aprofundar no mundo da informática</h3>
         <a href="{{ url('/dashboard') }}">Ir para o Dashboard!</a>
     </div>
+    <p>Template shop</p>
+
 </body>
 </html>

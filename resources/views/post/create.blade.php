@@ -16,5 +16,7 @@
         <br><br>
         <button type="submit">Publicar</button>
     </form>
+    <p>Template admin</p>
+
 </body>
 </html>

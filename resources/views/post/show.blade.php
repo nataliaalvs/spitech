@@ -11,5 +11,8 @@
     <pre style="text-align: center">
 {{ $post->content }}
     </pre>
+    <p>Template shop</p>
+
 </body>
+
 </html>

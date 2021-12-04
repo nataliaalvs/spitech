@@ -9,5 +9,7 @@
 <body>
     <h1>Dashboard</h1>
     <a href="{{ route('home') }}">Home</a>
+    <p>Template admin</p>
+
 </body>
 </html>

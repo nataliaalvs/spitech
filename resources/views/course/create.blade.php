@@ -25,5 +25,7 @@
 
     <button type="submit">Send</button>
     </form>
+    <p>Template admin</p>
+
 </body>
 </html>
