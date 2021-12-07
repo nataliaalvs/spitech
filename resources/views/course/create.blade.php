@@ -1,4 +1,58 @@
-<!DOCTYPE html>
+@extends('layouts.admin-profile')
+
+@section('page-name')
+    Novo curso
+@endsection
+
+@section('formulario')
+<form action="{{route('course.store')}}" method="POST">
+    @csrf
+    <div class="form-group">
+      <label for="exampleFormControlInput1">Nome do curso</label>
+      <input type="text" class="form-control" id="exampleFormControlInput1">
+    </div>
+    <div class="form-group">
+        <label for="exampleFormControlTextarea1">Descrição</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+      <div class="form-group">
+      <label class="exampleFormControlInput1" for="inlineFormInputName2">Preço</label>
+      <input type="number" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Jane Doe">
+      </div>
+      <label class="sr-only" for="inlineFormInputGroupUsername2">Username</label>
+      <div class="input-group mb-2 mr-sm-2">
+        <div class="input-group-prepend">
+          {{-- <div class="input-group-text">@</div> --}}
+        </div>
+        <input type="text" class="form-control" id="inlineFormInputGroupUsername2" placeholder="Username">
+      </div>
+    <div class="form-group">
+      <label for="exampleFormControlSelect1">Example select</label>
+      <select class="form-control" id="exampleFormControlSelect1">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="exampleFormControlSelect2">Example multiple select</label>
+      <select multiple class="form-control" id="exampleFormControlSelect2">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="exampleFormControlTextarea1">Example textarea</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+  </form>
+@endsection
+{{-- <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -28,4 +82,4 @@
     <p>Template admin</p>
 
 </body>
-</html>
+</html> --}}
