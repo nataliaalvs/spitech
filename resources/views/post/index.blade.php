@@ -1,48 +1,49 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Início</title>
-</head>
-
-<body>
-    <h1>Todos as publicações</h1>
+@extends('layouts.shop-template')
+@section('title-page')
+    Bem-vindo! - Spitech
+@endsection
+@section('title-banner')
+    Publicações
+@endsection
+@section('subtitle-banner')
+    Navegue pelas publicações
     <a href="{{ route('post.create') }}">Criar novo</a>
-    <table border='2'>
-        <thead>
-            <tr>
-                <th>Título</th>
-                <th>Texto</th>
 
-                <th>Ação</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach ($posts as $post)
-                <tr>
-                    <td>{{ $post->title }}</td>
-                    <td>{{ $post->content }}</td>
-                    
-                    <td>
-                        <a href="#"
-                            onclick="document.querySelector('#edit_{{ $post->id }}').submit();">Atualizar</a>
-                        <a href="#" onclick="document.querySelector('#show_{{ $post->id }}').submit();">Mostrar</a>
+@endsection
+@section('content')
 
-                    </td>
+        {{-- Para isso (em forma de cards) --}}
+        <section class="py-5">
+            <div class="container px-4 px-lg-5 mt-5">
+                <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                    @foreach ($posts as $post)
+                        <div class="col mb-5">
+                            <div class="card h-100">
+                                <!-- Product image -->
+                                <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
+                                <!-- Product details -->
+                                <div class="card-body p-4">
+                                    <div class="text-center">
+                                        <!-- Post title -->
+                                        <h5 class="fw-bolder">{{ $post->title }}</h5>
+                                        <!-- Post content -->
+                                        {{ $post->content }}
+                                    </div>
+                                </div>
+                                <!-- Product actions-->
+                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center"><a class="btn btn-outline-dark mt-auto mb-2" href="#" onclick="document.querySelector('#edit_{{ $post->id }}').submit();">Atualizar</a></div>
+                                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#" onclick="document.querySelector('#show_{{ $post->id }}').submit();">Mostrar</a></div>
+                                </div>
+                                <form id="edit_{{ $post->id }}" action="{{ route('post.edit', ['post' => $post->id]) }}"
+                                    method="GET"></form>
+                                <form id="show_{{ $post->id }}" action="{{ route('post.show', ['post' => $post->id]) }}"
+                                    method="GET"></form>
+                            </div>
+                        </div>                        
+                    @endforeach
+                </div>
+            </div>
+        </section>
 
-                </tr>
-                <form id="edit_{{ $post->id }}" action="{{ route('post.edit', ['post' => $post->id]) }}"
-                    method="GET"></form>
-                <form id="show_{{ $post->id }}" action="{{ route('post.show', ['post' => $post->id]) }}"
-                    method="GET"></form>
-            @endforeach
-        </tbody>
-    </table>
-    <p>Template shop</p>
-
-</body>
-
-</html>
+@endsection
