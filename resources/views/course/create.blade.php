@@ -9,7 +9,7 @@
     @csrf
     <div class="form-group col-sm-8 my-3">
       <label for="exampleFormControlInput1">Nome do curso</label>
-      <input type="text" class="form-control" id="exampleFormControlInput1" name="Name">
+      <input type="text" class="form-control" id="exampleFormControlInput1" name="name">
     </div>
     
     <div class="form-group col-sm-8 my-3">
@@ -25,7 +25,7 @@
         </div>
       <div class="col">
         <label class="exampleFormControlInput1" for="inlineFormInputName2">Duração</label>
-        <input type="time" class="form-control" name="duration">
+        <input type="text" class="form-control" name="duration">
       </div>
     </div>
     

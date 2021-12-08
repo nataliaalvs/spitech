@@ -1,13 +1,13 @@
 @extends('layouts.shop-template')
 @section('title-page')
-    Bem-vindo! - Spitech
+    Publicações - Spitech
 @endsection
 @section('title-banner')
     Publicações
 @endsection
 @section('subtitle-banner')
     Navegue pelas publicações
-    <a href="{{ route('post.create') }}">Criar novo</a>
+    <p><a href="{{ route('post.create') }}">Criar novo</a></p>
 
 @endsection
 @section('content')

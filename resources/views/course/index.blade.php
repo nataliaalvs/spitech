@@ -1,48 +1,51 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Início</title>
-</head>
-<body>
-    <h1>Todos os cursos</h1>
-    <a href="{{ route('course.create') }}">Criar novo</a>
-    <table border='2'>
-        <thead>
-            <tr> 
-                <th> Nome</th>
-                <th>Descrição</th>
-                <th>Preço
-                </th>
-                <th>Duração</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach($courses as $attribute)
-        <tr>
-            <td>{{$attribute->name}}</td>
-            <td>{{$attribute->description}}</td>
-            <td>R$ {{$attribute->price}}
-            </td>
-            <td>
-                {{$attribute->duration}}h
-            </td>
-            <td>
-                <a href="#" onclick="document.querySelector('#edit_{{ $attribute->id }}').submit();">Atualizar</a>
-                <a href="#" onclick="document.querySelector('#show_{{ $attribute->id }}').submit();">Mostrar</a>
+@extends('layouts.shop-template')
+@section('title-page')
+    Publicações - Spitech
+@endsection
+@section('title-banner')
+    Cursos
+@endsection
+@section('subtitle-banner')
+    Navegue pelos cursos
+    <p><a href="{{ route('course.create') }}">Criar novo</a></p>
 
-            </td>
+@endsection
+@section('content')
 
-        </tr>
-<form id="edit_{{ $attribute->id }}" action="{{ route('course.edit', ['course'=>$attribute->id]) }}" method="GET"></form>
-<form id="show_{{ $attribute->id }}" action="{{ route('course.show', ['course'=>$attribute->id]) }}" method="GET"></form>
+        {{-- Para isso (em forma de cards) --}}
+        <section class="py-5">
+            <div class="container px-4 px-lg-5 mt-5">
+                <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                    @foreach ($courses as $course)
+                        <div class="col mb-5">
+                            <div class="card h-100">
+                                <!-- Product image -->
+                                <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
+                                <!-- Product details -->
+                                <div class="card-body p-4">
+                                    <div class="text-center">
+                                        <!-- course name -->
+                                        <h5 class="fw-bolder">{{ $course->name }}</h5>
+                                        <p>{{$course->duration}}h por R$ {{$course->price}}</P>
+                                        <!-- course content -->
+                                        {{ $course->description }}
+                                    </div>
+                                </div>
+                                <!-- Product actions-->
+                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center"><a class="btn btn-outline-dark mt-auto mb-2" href="#" onclick="document.querySelector('#edit_{{ $course->id }}').submit();">Atualizar</a></div>
+                                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#" onclick="document.querySelector('#show_{{ $course->id }}').submit();">Mostrar</a></div>
+                                </div>
+                                <form id="edit_{{ $course->id }}" action="{{ route('course.edit', ['course' => $course->id]) }}"
+                                    method="GET"></form>
+                                <form id="show_{{ $course->id }}" action="{{ route('course.show', ['course' => $course->id]) }}"
+                                    method="GET"></form>
+                            </div>
+                        </div>                        
+                    @endforeach
+                </div>
+            </div>
+        </section>
 
+@endsection
 
-        @endforeach
-        </tbody>
-    </table>
-    <p>Template shop</p>
-</body>
-</html>
