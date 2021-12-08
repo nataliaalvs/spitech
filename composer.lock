@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6cadd819a6415b190ae2704ced6e6c8b",
+    "content-hash": "e38ef9e734d7ba7f76ee73a0db61b351",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -638,18 +638,6 @@
         },
         {
             "name": "guzzlehttp/guzzle",
-<<<<<<< Updated upstream
-            "version": "7.4.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "868b3571a039f0ebc11ac8f344f4080babe2cb94"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/868b3571a039f0ebc11ac8f344f4080babe2cb94",
-                "reference": "868b3571a039f0ebc11ac8f344f4080babe2cb94",
-=======
             "version": "7.4.1",
             "source": {
                 "type": "git",
@@ -660,7 +648,6 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/guzzle/guzzle/zipball/ee0a041b1760e6a53d2a39c8c34115adc2af2c79",
                 "reference": "ee0a041b1760e6a53d2a39c8c34115adc2af2c79",
->>>>>>> Stashed changes
                 "shasum": ""
             },
             "require": {
@@ -669,11 +656,7 @@
                 "guzzlehttp/psr7": "^1.8.3 || ^2.1",
                 "php": "^7.2.5 || ^8.0",
                 "psr/http-client": "^1.0",
-<<<<<<< Updated upstream
-                "symfony/deprecation-contracts": "^2.2"
-=======
                 "symfony/deprecation-contracts": "^2.2 || ^3.0"
->>>>>>> Stashed changes
             },
             "provide": {
                 "psr/http-client-implementation": "1.0"
@@ -759,11 +742,7 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/guzzle/issues",
-<<<<<<< Updated upstream
-                "source": "https://github.com/guzzle/guzzle/tree/7.4.0"
-=======
                 "source": "https://github.com/guzzle/guzzle/tree/7.4.1"
->>>>>>> Stashed changes
             },
             "funding": [
                 {
@@ -779,11 +758,7 @@
                     "type": "tidelift"
                 }
             ],
-<<<<<<< Updated upstream
-            "time": "2021-10-18T09:52:00+00:00"
-=======
             "time": "2021-12-06T18:43:05+00:00"
->>>>>>> Stashed changes
         },
         {
             "name": "guzzlehttp/promises",
@@ -985,17 +960,74 @@
             "time": "2021-10-06T17:43:30+00:00"
         },
         {
-            "name": "laravel/framework",
-            "version": "v8.74.0",
+            "name": "laravel/breeze",
+            "version": "v1.5.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/laravel/framework.git",
-                "reference": "004ea195012d5132eca07a176a6e587c6a74815e"
+                "url": "https://github.com/laravel/breeze.git",
+                "reference": "9abe49ebe4ff941660b7af1df318344f728d8f3d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/004ea195012d5132eca07a176a6e587c6a74815e",
-                "reference": "004ea195012d5132eca07a176a6e587c6a74815e",
+                "url": "https://api.github.com/repos/laravel/breeze/zipball/9abe49ebe4ff941660b7af1df318344f728d8f3d",
+                "reference": "9abe49ebe4ff941660b7af1df318344f728d8f3d",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/filesystem": "^8.42",
+                "illuminate/support": "^8.42",
+                "illuminate/validation": "^8.42",
+                "php": "^7.3|^8.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Laravel\\Breeze\\BreezeServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Laravel\\Breeze\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                }
+            ],
+            "description": "Minimal Laravel authentication scaffolding with Blade and Tailwind.",
+            "keywords": [
+                "auth",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/laravel/breeze/issues",
+                "source": "https://github.com/laravel/breeze"
+            },
+            "time": "2021-12-07T15:45:42+00:00"
+        },
+        {
+            "name": "laravel/framework",
+            "version": "v8.75.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/framework.git",
+                "reference": "0bb91d3176357da232da69762a64b0e0a0988637"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/0bb91d3176357da232da69762a64b0e0a0988637",
+                "reference": "0bb91d3176357da232da69762a64b0e0a0988637",
                 "shasum": ""
             },
             "require": {
@@ -1154,7 +1186,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2021-11-30T15:26:05+00:00"
+            "time": "2021-12-07T14:55:46+00:00"
         },
         {
             "name": "laravel/sanctum",
@@ -1281,16 +1313,16 @@
         },
         {
             "name": "laravel/tinker",
-            "version": "v2.6.2",
+            "version": "v2.6.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/tinker.git",
-                "reference": "c808a7227f97ecfd9219fbf913bad842ea854ddc"
+                "reference": "a9ddee4761ec8453c584e393b393caff189a3e42"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/tinker/zipball/c808a7227f97ecfd9219fbf913bad842ea854ddc",
-                "reference": "c808a7227f97ecfd9219fbf913bad842ea854ddc",
+                "url": "https://api.github.com/repos/laravel/tinker/zipball/a9ddee4761ec8453c584e393b393caff189a3e42",
+                "reference": "a9ddee4761ec8453c584e393b393caff189a3e42",
                 "shasum": ""
             },
             "require": {
@@ -1343,9 +1375,9 @@
             ],
             "support": {
                 "issues": "https://github.com/laravel/tinker/issues",
-                "source": "https://github.com/laravel/tinker/tree/v2.6.2"
+                "source": "https://github.com/laravel/tinker/tree/v2.6.3"
             },
-            "time": "2021-09-28T15:47:34+00:00"
+            "time": "2021-12-07T16:41:42+00:00"
         },
         {
             "name": "league/commonmark",
@@ -3114,18 +3146,6 @@
         },
         {
             "name": "symfony/deprecation-contracts",
-<<<<<<< Updated upstream
-            "version": "v2.5.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/deprecation-contracts.git",
-                "reference": "6f981ee24cf69ee7ce9736146d1c57c2780598a8"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/deprecation-contracts/zipball/6f981ee24cf69ee7ce9736146d1c57c2780598a8",
-                "reference": "6f981ee24cf69ee7ce9736146d1c57c2780598a8",
-=======
             "version": "v3.0.0",
             "source": {
                 "type": "git",
@@ -3136,7 +3156,6 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/deprecation-contracts/zipball/c726b64c1ccfe2896cb7df2e1331c357ad1c8ced",
                 "reference": "c726b64c1ccfe2896cb7df2e1331c357ad1c8ced",
->>>>>>> Stashed changes
                 "shasum": ""
             },
             "require": {
@@ -3145,11 +3164,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-<<<<<<< Updated upstream
-                    "dev-main": "2.5-dev"
-=======
                     "dev-main": "3.0-dev"
->>>>>>> Stashed changes
                 },
                 "thanks": {
                     "name": "symfony/contracts",
@@ -3178,11 +3193,7 @@
             "description": "A generic function and convention to trigger deprecation notices",
             "homepage": "https://symfony.com",
             "support": {
-<<<<<<< Updated upstream
-                "source": "https://github.com/symfony/deprecation-contracts/tree/v2.5.0"
-=======
                 "source": "https://github.com/symfony/deprecation-contracts/tree/v3.0.0"
->>>>>>> Stashed changes
             },
             "funding": [
                 {
@@ -3198,11 +3209,7 @@
                     "type": "tidelift"
                 }
             ],
-<<<<<<< Updated upstream
-            "time": "2021-07-12T14:48:14+00:00"
-=======
             "time": "2021-11-01T23:48:49+00:00"
->>>>>>> Stashed changes
         },
         {
             "name": "symfony/error-handler",
@@ -4730,18 +4737,6 @@
         },
         {
             "name": "symfony/service-contracts",
-<<<<<<< Updated upstream
-            "version": "v2.5.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/service-contracts.git",
-                "reference": "1ab11b933cd6bc5464b08e81e2c5b07dec58b0fc"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/service-contracts/zipball/1ab11b933cd6bc5464b08e81e2c5b07dec58b0fc",
-                "reference": "1ab11b933cd6bc5464b08e81e2c5b07dec58b0fc",
-=======
             "version": "v2.4.1",
             "source": {
                 "type": "git",
@@ -4752,16 +4747,11 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/service-contracts/zipball/d664541b99d6fb0247ec5ff32e87238582236204",
                 "reference": "d664541b99d6fb0247ec5ff32e87238582236204",
->>>>>>> Stashed changes
                 "shasum": ""
             },
             "require": {
                 "php": ">=7.2.5",
-                "psr/container": "^1.1",
-                "symfony/deprecation-contracts": "^2.1"
-            },
-            "conflict": {
-                "ext-psr": "<1.1|>=2"
+                "psr/container": "^1.1"
             },
             "conflict": {
                 "ext-psr": "<1.1|>=2"
@@ -4772,7 +4762,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "2.5-dev"
+                    "dev-main": "2.4-dev"
                 },
                 "thanks": {
                     "name": "symfony/contracts",
@@ -4809,11 +4799,7 @@
                 "standards"
             ],
             "support": {
-<<<<<<< Updated upstream
-                "source": "https://github.com/symfony/service-contracts/tree/v2.5.0"
-=======
                 "source": "https://github.com/symfony/service-contracts/tree/v2.4.1"
->>>>>>> Stashed changes
             },
             "funding": [
                 {
@@ -4829,11 +4815,7 @@
                     "type": "tidelift"
                 }
             ],
-<<<<<<< Updated upstream
-            "time": "2021-11-04T16:48:04+00:00"
-=======
             "time": "2021-11-04T16:37:19+00:00"
->>>>>>> Stashed changes
         },
         {
             "name": "symfony/string",
@@ -5901,16 +5883,16 @@
         },
         {
             "name": "laravel/sail",
-            "version": "v1.12.9",
+            "version": "v1.12.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/sail.git",
-                "reference": "81609c1c8ce069aa6c3613ccb843cdec299424be"
+                "reference": "9d5000703c7f811588a780b9aab91cca5c336319"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/sail/zipball/81609c1c8ce069aa6c3613ccb843cdec299424be",
-                "reference": "81609c1c8ce069aa6c3613ccb843cdec299424be",
+                "url": "https://api.github.com/repos/laravel/sail/zipball/9d5000703c7f811588a780b9aab91cca5c336319",
+                "reference": "9d5000703c7f811588a780b9aab91cca5c336319",
                 "shasum": ""
             },
             "require": {
@@ -5957,7 +5939,7 @@
                 "issues": "https://github.com/laravel/sail/issues",
                 "source": "https://github.com/laravel/sail"
             },
-            "time": "2021-11-30T15:50:24+00:00"
+            "time": "2021-12-07T16:25:11+00:00"
         },
         {
             "name": "mockery/mockery",
@@ -6516,18 +6498,6 @@
         },
         {
             "name": "phpunit/php-code-coverage",
-<<<<<<< Updated upstream
-            "version": "9.2.9",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
-                "reference": "f301eb1453c9e7a1bc912ee8b0ea9db22c60223b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/f301eb1453c9e7a1bc912ee8b0ea9db22c60223b",
-                "reference": "f301eb1453c9e7a1bc912ee8b0ea9db22c60223b",
-=======
             "version": "9.2.10",
             "source": {
                 "type": "git",
@@ -6538,7 +6508,6 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/d5850aaf931743067f4bfc1ae4cbd06468400687",
                 "reference": "d5850aaf931743067f4bfc1ae4cbd06468400687",
->>>>>>> Stashed changes
                 "shasum": ""
             },
             "require": {
@@ -6594,11 +6563,7 @@
             ],
             "support": {
                 "issues": "https://github.com/sebastianbergmann/php-code-coverage/issues",
-<<<<<<< Updated upstream
-                "source": "https://github.com/sebastianbergmann/php-code-coverage/tree/9.2.9"
-=======
                 "source": "https://github.com/sebastianbergmann/php-code-coverage/tree/9.2.10"
->>>>>>> Stashed changes
             },
             "funding": [
                 {
@@ -6606,11 +6571,7 @@
                     "type": "github"
                 }
             ],
-<<<<<<< Updated upstream
-            "time": "2021-11-19T15:21:02+00:00"
-=======
             "time": "2021-12-05T09:12:13+00:00"
->>>>>>> Stashed changes
         },
         {
             "name": "phpunit/php-file-iterator",

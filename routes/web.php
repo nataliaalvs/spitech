@@ -1,8 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\CourseController;
-use App\Http\Controllers\PostController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,18 +15,10 @@ use App\Http\Controllers\PostController;
 
 Route::get('/', function () {
     return view('welcome');
-})->name('home');
-
+});
 
 Route::get('/dashboard', function () {
-    return view('dashboard.dashboard');
-});
+    return view('dashboard');
+})->middleware(['auth'])->name('dashboard');
 
-Route::get('/login', function () {
-    return view('layouts.login-register');
-});
-
-Route::resource('course', CourseController::class);
-
-Route::resource('post', PostController::class);
-
+require __DIR__.'/auth.php';
