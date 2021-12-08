@@ -61,7 +61,8 @@
                                     <a class="nav-link" href="layout-sidenav-light.html">Light Sidenav</a>
                                 </nav>
                             </div> --}}
-                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
+                            
+                            <a class="nav-link collapsed" href="" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
                                 <div class="sb-nav-link-icon"><i class="fas fa-pencil-alt"></i></div>
                                 Editar curso
                                 {{-- <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div> --}}
@@ -93,7 +94,7 @@
                                 </nav>
                             </div>
                             <div class="sb-sidenav-menu-heading">Addons</div> --}}
-                            <a class="nav-link" href="charts.html">
+                            <a class="nav-link" href="#">
                                 <div class="sb-nav-link-icon"><i class="far fa-eye"></i></div>
                                 Todos os cursos
                             </a>
@@ -108,7 +109,7 @@
             <div id="layoutSidenav_content">
                 <main>
                     <div class="container-fluid px-4">
-                        <h1 class="mt-4">@yield('page-name')</h1>
+                        <h1 class="mt-4  offset-md-3">@yield('page-name')</h1>
                         {{-- <ol class="breadcrumb mb-4">
                             <li class="breadcrumb-item active">Dashboard</li>
                         </ol> --}}

@@ -24,8 +24,8 @@ Route::get('/dashboard', function () {
     return view('dashboard.dashboard');
 });
 
-Route::get('/profile', function () {
-    return view('layouts.admin-profile');
+Route::get('/login', function () {
+    return view('layouts.login-register');
 });
 
 Route::resource('course', CourseController::class);

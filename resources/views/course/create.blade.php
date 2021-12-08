@@ -5,52 +5,41 @@
 @endsection
 
 @section('formulario')
-<form action="{{route('course.store')}}" method="POST">
+<form action="{{route('course.store')}}" method="POST" class=" offset-md-3 my-4">
     @csrf
-    <div class="form-group">
+    <div class="form-group col-sm-8 my-3">
       <label for="exampleFormControlInput1">Nome do curso</label>
-      <input type="text" class="form-control" id="exampleFormControlInput1">
+      <input type="text" class="form-control" id="exampleFormControlInput1" name="Name">
     </div>
-    <div class="form-group">
+    
+    <div class="form-group col-sm-8 my-3">
         <label for="exampleFormControlTextarea1">Descrição</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-      </div>
-      <div class="form-group">
-      <label class="exampleFormControlInput1" for="inlineFormInputName2">Preço</label>
-      <input type="number" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Jane Doe">
-      </div>
-      <label class="sr-only" for="inlineFormInputGroupUsername2">Username</label>
-      <div class="input-group mb-2 mr-sm-2">
-        <div class="input-group-prepend">
-          {{-- <div class="input-group-text">@</div> --}}
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="description"></textarea>
+    </div>
+  
+    <div class="form-group col-sm-8 my-3">
+      <div class="row">
+        <div class="col">
+          <label class="exampleFormControlInput1" for="inlineFormInputName2">Preço</label>
+          <input type="number" class="form-control" placeholder="R$" name="price">
         </div>
-        <input type="text" class="form-control" id="inlineFormInputGroupUsername2" placeholder="Username">
+      <div class="col">
+        <label class="exampleFormControlInput1" for="inlineFormInputName2">Duração</label>
+        <input type="time" class="form-control" name="duration">
       </div>
-    <div class="form-group">
-      <label for="exampleFormControlSelect1">Example select</label>
-      <select class="form-control" id="exampleFormControlSelect1">
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
-        <option>5</option>
-      </select>
     </div>
-    <div class="form-group">
-      <label for="exampleFormControlSelect2">Example multiple select</label>
-      <select multiple class="form-control" id="exampleFormControlSelect2">
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
-        <option>5</option>
-      </select>
+    
+    <div class="form-group col-sm-15 my-3">
+      <label for="exampleFormControlInput1">Link do curso</label>
+      <input type="text" class="form-control" id="exampleFormControlInput1" name="link">
     </div>
-    <div class="form-group">
-      <label for="exampleFormControlTextarea1">Example textarea</label>
-      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-    </div>
+    
+
+    <button type="submit" class="btn btn-secondary my-4">Publicar</button>
+
   </form>
+
+  
 @endsection
 {{-- <!DOCTYPE html>
 <html lang="pt-br">
