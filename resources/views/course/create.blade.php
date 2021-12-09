@@ -1,4 +1,4 @@
-@extends('layouts.admin-profile')
+@extends('layouts.admin-template')
 
 @section('page-name')
     Novo curso

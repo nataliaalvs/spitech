@@ -26,7 +26,11 @@ Route::get('/dashboard', function () {
 
 //p ver se ta bonitinho
 Route::get('/profile', function () {
-    return view('layouts.admin-profile');
+    return view('layouts.admin-template');
+});
+
+Route::get('/login', function () {
+    return view('layouts.login-register');
 });
 
 Route::resource('course', CourseController::class);

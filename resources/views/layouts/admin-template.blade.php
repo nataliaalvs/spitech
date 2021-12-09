@@ -61,8 +61,7 @@
                                     <a class="nav-link" href="layout-sidenav-light.html">Light Sidenav</a>
                                 </nav>
                             </div> --}}
-                            
-                            <a class="nav-link collapsed" href="" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
+                            <a class="nav-link collapsed">
                                 <div class="sb-nav-link-icon"><i class="fas fa-pencil-alt"></i></div>
                                 Editar curso
                                 {{-- <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div> --}}
@@ -663,7 +662,7 @@
                         </div> --}}
                     </div>
                 </main>
-                <footer class="py-4 bg-light mt-auto">
+                {{-- <footer class="py-4 bg-light mt-auto">
                     <div class="container-fluid px-4">
                         <div class="d-flex align-items-center justify-content-between small">
                             <div class="text-muted">Copyright &copy; Your Website 2021</div>
@@ -674,7 +673,7 @@
                             </div>
                         </div>
                     </div>
-                </footer>
+                </footer> --}}
             </div>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
