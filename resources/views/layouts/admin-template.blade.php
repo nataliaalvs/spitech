@@ -45,7 +45,7 @@
                     <div class="sb-sidenav-menu">
                         <div class="nav">
                             <div class="sb-sidenav-menu-heading"></div>
-                            <a class="nav-link" href="index.html">
+                            <a class="nav-link" href="{{url('/')}}">
                                 <div class="sb-nav-link-icon"><i class="fas fa-arrow-left"></i></div>
                                 Página Inicial
                             </a>
@@ -97,10 +97,9 @@
                                 <div class="sb-nav-link-icon"><i class="far fa-eye"></i></div>
                                 Todos os cursos
                             </a>
-                            {{-- <a class="nav-link" href="tables.html">
-                                <div class="sb-nav-link-icon"><i class="fas fa-trash"></i></div>
-                                Apagar
-                            </a> --}}
+                            <div class="sb-sidenav-footer my-8" style="color: white">
+                                <div class="small">Logged in as:</div>
+                            </div>
                         </div>
                     </div>
                 </nav>
