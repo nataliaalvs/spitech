@@ -1,59 +1,49 @@
-<x-guest-layout>
-    <x-auth-card>
-        <x-slot name="logo">
-            <a href="/">
-                <x-application-logo class="w-20 h-20 fill-current text-gray-500" />
-            </a>
-        </x-slot>
+@extends('layouts.login-register')
 
-        <!-- Validation Errors -->
-        <x-auth-validation-errors class="mb-4" :errors="$errors" />
+@section('page-title')
+    Cadastre-se
+@endsection
 
-        <form method="POST" action="{{ route('register') }}">
-            @csrf
-
-            <!-- Name -->
-            <div>
-                <x-label for="name" :value="__('Name')" />
-
-                <x-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus />
+@section('form')
+<form method="POST" action="{{route('dashboard')}}">
+    <div class="row mb-3">
+        <div class="col-md-6">
+            <div class="form-floating mb-3 mb-md-0">
+                <input class="form-control" id="inputFirstName" name="name" type="text" placeholder="Enter your first name" />
+                <label for="inputFirstName">Nome</label>
             </div>
-
-            <!-- Email Address -->
-            <div class="mt-4">
-                <x-label for="email" :value="__('Email')" />
-
-                <x-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required />
+        </div>
+        <div class="col-md-6">
+            <div class="form-floating">
+                <input class="form-control" id="inputLastName" name="lastName" type="text" placeholder="Enter your last name" />
+                <label for="inputLastName">Sobrenome</label>
             </div>
-
-            <!-- Password -->
-            <div class="mt-4">
-                <x-label for="password" :value="__('Password')" />
-
-                <x-input id="password" class="block mt-1 w-full"
-                                type="password"
-                                name="password"
-                                required autocomplete="new-password" />
+        </div>
+    </div>
+    <div class="form-floating mb-3">
+        <input class="form-control" id="inputEmail" name="email" type="email" placeholder="name@example.com" />
+        <label for="inputEmail">Email</label>
+    </div>
+    <div class="row mb-3">
+        <div class="col-md-6">
+            <div class="form-floating mb-3 mb-md-0">
+                <input class="form-control" id="inputPassword" name="password" type="password" placeholder="Create a password" />
+                <label for="inputPassword">Senha</label>
             </div>
-
-            <!-- Confirm Password -->
-            <div class="mt-4">
-                <x-label for="password_confirmation" :value="__('Confirm Password')" />
-
-                <x-input id="password_confirmation" class="block mt-1 w-full"
-                                type="password"
-                                name="password_confirmation" required />
+        </div>
+        <div class="col-md-6">
+            <div class="form-floating mb-3 mb-md-0">
+                <input class="form-control" id="inputPasswordConfirm" type="password" placeholder="Confirm password" />
+                <label for="inputPasswordConfirm">Confirme sua senha</label>
             </div>
-
-            <div class="flex items-center justify-end mt-4">
-                <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('login') }}">
-                    {{ __('Already registered?') }}
-                </a>
-
-                <x-button class="ml-4">
-                    {{ __('Register') }}
-                </x-button>
-            </div>
-        </form>
-    </x-auth-card>
-</x-guest-layout>
+        </div>
+    </div>
+    <div class="mt-4 mb-0">
+        <div class="d-grid"><a class="btn btn-primary btn-block" href="{{route('dashboard')}}">Criar conta</a></div>
+    </div>
+</form>
+</div>
+<div class="card-footer text-center py-3">
+<div class="small"><a href="{{url('/login')}}">Já tem uma conta? Vá para login</a></div>
+</div>
+@endsection

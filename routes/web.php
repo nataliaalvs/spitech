@@ -30,7 +30,10 @@ Route::get('/profile', function () {
 });
 
 Route::get('/login', function () {
-    return view('layouts.login-register');
+    return view('auth.login');
+});
+Route::get('/register', function () {
+    return view('auth.register');
 });
 
 Route::resource('course', CourseController::class);
