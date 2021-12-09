@@ -62,7 +62,7 @@
                                 </nav>
                             </div> --}}
                             <a class="nav-link collapsed">
-                                <div class="sb-nav-link-icon"><i class="fas fa-pencil-alt"></i></div>
+                                <div class="sb-nav-link-icon" href="{{ route('course.edit', ['course' => $course->id]) }}"><i class="fas fa-pencil-alt"></i></div>
                                 Editar curso
                                 {{-- <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div> --}}
                             {{-- </a>
