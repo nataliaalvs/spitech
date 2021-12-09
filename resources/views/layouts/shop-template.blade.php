@@ -35,10 +35,10 @@
                             </ul>
                         </li> --}}
                     </ul>
-                    <form class="d-flex">
+                    <form class="d-flex" action="{{route('login')}}">
                         <button class="btn btn-outline-dark" type="submit">
-                            <i class="bi-collection-play-fill me-1"></i>
-                            Meus cursos
+                            {{-- <i class="bi-collection-play-fill me-1"></i> --}}
+                            Login
                         </button>
                     </form>
                 </div>

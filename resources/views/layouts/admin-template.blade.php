@@ -14,7 +14,7 @@
     <body class="sb-nav-fixed">
         <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
             <!-- Navbar Brand-->
-            <a class="navbar-brand ps-3" href="#">Spitech</a>
+            <a class="navbar-brand ps-3" href="{{route('welcome')}}">Spitech</a>
             <!-- Sidebar Toggle-->
             <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
             <!-- Navbar Search-->
@@ -61,9 +61,9 @@
                                     <a class="nav-link" href="layout-sidenav-light.html">Light Sidenav</a>
                                 </nav>
                             </div> --}}
-                            <a class="nav-link collapsed">
-                                <div class="sb-nav-link-icon" href="{{ route('course.edit', ['course' => $course->id]) }}"><i class="fas fa-pencil-alt"></i></div>
-                                Editar curso
+                            {{-- <a class="nav-link collapsed">
+                                <div class="sb-nav-link-icon" href="#"><i class="fas fa-pencil-alt"></i></div>
+                                Editar curso --}}
                                 {{-- <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div> --}}
                             {{-- </a>
                             <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
@@ -95,7 +95,7 @@
                             <div class="sb-sidenav-menu-heading">Addons</div> --}}
                             <a class="nav-link" href="#">
                                 <div class="sb-nav-link-icon"><i class="far fa-eye"></i></div>
-                                Todos os cursos
+                                Meus cursos
                             </a>
                             <div class="sb-sidenav-footer my-8" style="color: white">
                                 <div class="small">Logged in as:</div>

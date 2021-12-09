@@ -11,6 +11,7 @@ class CreateCoursesTable extends Migration{
             $table->unsignedBigInteger('user_id')->nullable();
             $table->float('price');
             $table->string('name');
+            $table->string('link');
             $table->string('description');
             $table->integer('in_progress')->default(0);
             $table->boolean('acquired')->default(0);

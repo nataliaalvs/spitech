@@ -17,7 +17,7 @@ use App\Http\Controllers\PostController;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('welcome');
 
 Route::get('/dashboard', function () {
     return view('dashboard.dashboard');
@@ -31,7 +31,8 @@ Route::get('/profile', function () {
 
 Route::get('/login', function () {
     return view('auth.login');
-});
+})->name('login');
+
 Route::get('/register', function () {
     return view('auth.register');
 });
