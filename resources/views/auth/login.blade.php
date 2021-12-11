@@ -21,7 +21,7 @@
     </div>
     <div class="d-flex align-items-center justify-content-between mt-4 mb-2">
         <a class="small" href="#">Esqueceu a senha?</a>
-        <a class="btn btn-primary" href="#">Entrar</a>
+        <a class="btn btn-primary" href="{{route('dashboard')}}">Entrar</a>
     </div>
 
     <div class="card-footer text-center py-3">

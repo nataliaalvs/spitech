@@ -21,7 +21,7 @@
         </div>
     </div>
     <div class="form-floating mb-3">
-        <input class="form-control" id="mail" name="email" type="email" placeholder="name@example.com" />
+        <input class="form-control" id="email" name="email" type="email" placeholder="name@example.com" />
         <label for="inputEmail">Email</label>
     </div>
     <div class="row mb-3">
