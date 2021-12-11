@@ -1,22 +1,23 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Criar post</title>
-</head>
-<body>
-    <h1>Crie sua publicação</h1>
-    <form action="{{ route('post.store') }}" method="post">
-        @csrf
-        <label for="title">Título</label>
-        <input type="text" name="title" id="title"> <br><br>
-        <textarea name="content" id="content" cols="30" rows="10" placeholder="Seu texto vai aqui"></textarea>
-        <br><br>
-        <button type="submit">Publicar</button>
-    </form>
-    <p>Template admin</p>
+@extends('layouts.admin-template')
 
-</body>
-</html>
+@section('page-name')
+    Criar post
+@endsection
+
+@section('formulario')
+<form action="{{route('course.store')}}" method="POST" class=" offset-md-3 my-4">
+    @csrf
+    <div class="form-group col-sm-8 my-3">
+      <label for="exampleFormControlInput1">Título</label>
+      <input type="text" class="form-control" id="title" name="title" required>
+    </div>
+    
+    <div class="form-group col-sm-8 my-3">
+        <label for="exampleFormControlTextarea1">Artigo/Post</label>
+        <textarea class="form-control" id="content" rows="10" cols="30" name="content" required></textarea>
+    </div>
+  
+    <button type="submit" class="btn btn-secondary my-4">Publicar</button>
+
+</form>
+@endsection

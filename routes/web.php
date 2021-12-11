@@ -21,13 +21,7 @@ Route::get('/', function () {
 
 Route::get('/dashboard', function () {
     return view('dashboard.dashboard');
-})->name('dashboard');
-// ->middleware(['auth'])->name('dashboard');
-
-//p ver se ta bonitinho
-Route::get('/profile', function () {
-    return view('layouts.admin-template');
-});
+})->middleware(['auth'])->name('dashboard');
 
 Route::get('/login', function () {
     return view('auth.login');
@@ -46,5 +40,5 @@ Route::get('/layout-shop-template', function(){
     return view('layouts.shop-template');
 });
 
-// require __DIR__.'/auth.php';
+require __DIR__.'/auth.php';
 

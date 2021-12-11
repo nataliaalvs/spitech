@@ -53,6 +53,10 @@
                             <a class="nav-link collapsed" href="{{route('course.create')}}">
                                 <div class="sb-nav-link-icon"><i class="fas fa-plus-square"></i></div>
                                 Novo curso
+                            </a> 
+                            <a class="nav-link collapsed" href="{{route('post.create')}}">
+                                <div class="sb-nav-link-icon"><i class="far fa-file-alt"></i></div>
+                                Novo post
                                 {{-- <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>--}}
                             </a> 
                             {{-- <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">

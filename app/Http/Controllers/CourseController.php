@@ -11,6 +11,11 @@ use App\Models\Course;
 
 class CourseController extends Controller{
 
+    public function __construct(){
+    
+        $this->middleware('auth')->only('edit', 'create');
+    }
+
     public function index(){
         $courses = Course::all(); 
         return view('course.index', ['courses'=>$courses]);
