@@ -6,10 +6,11 @@
 
 @section('form')
 <form method="POST" action="{{url('/register')}}">
+    @csrf
     <div class="row mb-3">
         <div class="col-md-6">
             <div class="form-floating mb-3 mb-md-0">
-                <input class="form-control" id="ame" name="name" type="text" placeholder="Enter your first name" />
+                <input class="form-control" id="name" name="name" type="text" placeholder="Enter your first name" />
                 <label for="inputFirstName">Nome</label>
             </div>
         </div>
@@ -38,12 +39,13 @@
             </div>
         </div>
     </div>
-    <div class="mt-4 mb-0">
-        <div class="d-grid"><a class="btn btn-primary btn-block" href="{{route('dashboard')}}">Criar conta</a></div>
+    <div class="mt-4 mb-2">
+        <button type="submit" class="btn btn-primary btn-user btn-block">
+            Criar conta
+        </button>
     </div>
 </form>
-</div>
 <div class="card-footer text-center py-3">
-<div class="small"><a href="{{url('/login')}}">Já tem uma conta? Vá para login</a></div>
+    <div class="small"><a href="{{url('/login')}}">Já tem uma conta? Vá para login</a></div>
 </div>
 @endsection
