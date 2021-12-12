@@ -105,7 +105,7 @@
                                 Meus cursos
                             </a>
                             <div class="sb-sidenav-footer my-8" style="color: white">
-                                <div class="small">Logged in as:</div>
+                                <div class="small">Logged in as:{{$users->name}}</div>
                             </div>
                         </div>
                     </div>
