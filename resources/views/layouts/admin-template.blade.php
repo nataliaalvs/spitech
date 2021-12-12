@@ -104,8 +104,12 @@
                                 <div class="sb-nav-link-icon"><i class="far fa-eye"></i></div>
                                 Meus cursos
                             </a>
-                            <div class="sb-sidenav-footer my-8" style="color: white">
-                                <div class="small">Logged in as:{{$users->name}}</div>
+                            <a class="nav-link" href="#">
+                                <div class="sb-nav-link-icon"><i class="far fa-eye"></i></div>
+                                Meus posts
+                            </a>
+                            <div class="sb-sidenav-footer my-5" style="color: white">
+                                <div class="small">Logado(a) como {{Auth::user()->name}}</div>
                             </div>
                         </div>
                     </div>

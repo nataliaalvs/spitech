@@ -9,7 +9,7 @@ class AdminController extends Controller
 {
     public function callName(){
         $users = User::all(); 
-        return view('dashboard.dashboad', ['users'=>$users]);
+        return view('layouts.admin-template', ['users'=>$users]);
         
     } 
 }

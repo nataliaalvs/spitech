@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CourseController;
 use App\Http\Controllers\PostController;
-use App\Http\Controllers\AdminController;
+// use App\Http\Controllers\AdminController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,7 +28,7 @@ Route::resource('course', CourseController::class);
 
 Route::resource('post', PostController::class);
 
-Route::resource('user', AdminController::class);
+// Route::resource('user', AdminController::class);
 
 // rota somente ver o template sem nada
 Route::get('/layout-shop-template', function(){
