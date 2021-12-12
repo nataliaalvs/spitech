@@ -5,8 +5,3 @@
 @section('subtitle-banner')
     Uma nova plataforma para se aprofundar no mundo da informática
 @endsection
-@section('content')
-<div class="container">
-    <a href="{{ url('/dashboard') }}">Ir para o Dashboard!</a>
-</div>
-@endsection
