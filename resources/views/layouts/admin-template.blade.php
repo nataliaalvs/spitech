@@ -48,7 +48,7 @@
                     <div class="sb-sidenav-menu">
                         <div class="nav">
                             <div class="sb-sidenav-menu-heading"></div>
-                            <a class="nav-link" href="{{url('/')}}">
+                            <a class="nav-link" href="{{url('/dashboard')}}">
                                 <div class="sb-nav-link-icon"><i class="fas fa-arrow-left"></i></div>
                                 Página Inicial
                             </a>
@@ -122,7 +122,7 @@
                         {{-- <ol class="breadcrumb mb-4">
                             <li class="breadcrumb-item active">Dashboard</li>
                         </ol> --}}
-
+                        @yield('main')
                         @yield('formulario')
                         {{-- <div class="row">
                             <div class="col-xl-3 col-md-6">
