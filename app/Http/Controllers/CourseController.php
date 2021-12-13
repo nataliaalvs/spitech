@@ -13,7 +13,7 @@ class CourseController extends Controller{
 
     public function __construct(){
     
-        $this->middleware('auth')->only('edit', 'create', 'destroy');
+        $this->middleware('auth')->except('index', 'show');
     }
 
     public function index(){
