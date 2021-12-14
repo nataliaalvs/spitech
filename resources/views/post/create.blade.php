@@ -14,7 +14,7 @@
     
     <div class="form-group col-sm-8 my-3">
         <label for="exampleFormControlTextarea1">Artigo/Post</label>
-        <textarea class="form-control" id="content" rows="10" cols="30" name="content" required value="{{old('content')}}"></textarea>
+        <textarea class="form-control" id="content" rows="10" cols="30" name="content" required>{{old('description')}}</textarea>
     </div>
   
     <button type="submit" class="btn btn-secondary my-4">Publicar</button>

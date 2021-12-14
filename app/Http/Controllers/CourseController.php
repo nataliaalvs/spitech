@@ -3,9 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Http\Requests\CourseRequest;
 use App\Models\Course;
 //usando o modelo
+use App\Http\Requests\CourseRequest;
 
 
 
