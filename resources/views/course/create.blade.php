@@ -14,7 +14,7 @@
     
     <div class="form-group col-sm-8 my-3">
       <label for="exampleFormControlTextarea1">Descrição</label>
-      <textarea class="form-control" id="description" rows="3" name="description" required value="{{old('description')}}"></textarea>
+      <textarea class="form-control" id="description" rows="3" value="{{old('description')}}" name="description" required></textarea>
     </div>
     
     <div class="form-group col-sm-8 my-3">

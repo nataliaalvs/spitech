@@ -9,7 +9,7 @@
     @csrf
     <div class="form-group col-sm-8 my-3">
       <label for="exampleFormControlInput1">Título</label>
-      <input type="text" class="form-control" id="title" name="title" required value="{{old('title')}}">
+      <input type="text" class="form-control" id="title" name="title" required value="{{old('title')}}" autocomplete="off">
     </div>
     
     <div class="form-group col-sm-8 my-3">
