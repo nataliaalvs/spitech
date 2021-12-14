@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Http\Requests\CourseRequest;
 use App\Models\Course;
 //usando o modelo
 
@@ -26,7 +26,8 @@ class CourseController extends Controller{
         return view('course.create');
     }
 
-    public function store(Request $request){
+    public function store(CourseRequest $request){
+
         $course = new Course; 
         $course->name = $request->post('name');
         $course->description = $request->post('description');
@@ -54,7 +55,7 @@ class CourseController extends Controller{
     }
 
     
-    public function update(Request $request, $id){
+    public function update(CourseRequest $request, $id){
         $course = Course::find($id);
         $course->name = $request->post('name');
         $course->description = $request->post('description');
