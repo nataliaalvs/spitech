@@ -24,8 +24,8 @@ class CourseRequest extends FormRequest{
         return [
             'name.required' => 'O campo nome é obrigatório',
             'description.required' => 'O campo descrição é obrigatório',
-            'price.required' => 'O campo preço é obrigatório',
-            'duration.required' => 'O campo duração é obrigatório',
+            'price.numeric' => 'O campo preço DEVE ser um número',
+            'duration.numeric' => 'O campo duração PRECISA ser um número',
             'link.required' => 'O campo link é obrigatório'
         ];
     }
