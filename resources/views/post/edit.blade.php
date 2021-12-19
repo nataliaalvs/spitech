@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+{{-- <!DOCTYPE html>
 <html lang="PT-BR">
 <head>
     <meta charset="UTF-8">
@@ -21,4 +21,27 @@
     <p>Template admin</p>
 
 </body>
-</html>
+</html> --}}
+
+@extends('layouts.admin-template')
+
+@section('page-name')
+    Editar publicação
+@endsection
+
+@section('formulario')
+<form action="{{ route('post.update', ['post'=>$post])}}" method="POST" class=" offset-md-3 my-4">
+    @method('PUT')
+    @csrf
+    <div class="form-group col-sm-8 my-3">
+      <label for="exampleFormControlInput1">Título</label>
+      <input type="text" class="form-control" id="title" name="title" required value="{{$post->title}}" autocomplete="off">
+    </div>
+    <div class="form-group col-sm-8 my-3">
+        <label for="exampleFormControlTextarea1">Artigo/Post</label>
+        <textarea class="form-control" id="content" rows="12" cols="30" name="content" required maxlength="300" style="white-space:normal">{{$post->content}}</textarea>
+    </div>
+    <button type="submit" class="btn btn-secondary my-4">Atualizar</button>
+
+</form>
+@endsection

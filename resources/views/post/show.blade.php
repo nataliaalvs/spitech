@@ -1,6 +1,6 @@
 @extends('layouts.shop-template')
 @section('title-page')
-{{ $post->name }} - Spitech
+{{ $post->name }} Publicações - Spitech
 @endsection
 @section('title-banner')
 {{ $post->title }}
@@ -11,10 +11,10 @@
 
 @endsection
 @section('content')
-<div class="my-4">
-    <pre style="text-align: center; font-size: 1.5rem">
-{{ $post->description }}
-    </pre>
+<div class="my-4 mx-5">
+    <p class="text-center" style="text-align: center; font-size: 1.5rem; white-space:normal">
+    {{$post->content}}
+    </p>
 </div>
 <div class="container text-secondary my-4" style="text-align: end">
     Criado por {{ $nameUser }}

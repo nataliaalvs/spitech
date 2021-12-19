@@ -36,7 +36,7 @@
     </div>
     
 
-    <button type="submit" class="btn btn-secondary my-4">Editar</button>
+    <button type="submit" class="btn btn-secondary my-4">Atualizar</button>
 
   </form>
 

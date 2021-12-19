@@ -13,8 +13,11 @@
 @section('content')
 <div class="my-4">
     <pre style="text-align: center; font-size: 1.5rem">
-{{ $course->description }}
+    {{$course->description }}
     </pre>
+</div>
+<div class="link px-5" style="text-align: end">
+    <a href="{{$course->link}}">{{$course->link}}</a>
 </div>
 <div class="container text-secondary my-4" style="text-align: end">
     Criado por {{ $nameUser }}
