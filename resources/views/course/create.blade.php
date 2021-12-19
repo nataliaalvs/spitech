@@ -29,6 +29,9 @@
           <input type="text" class="form-control" min="0" name="duration" id="duration" required value="{{old('duration')}}" autocomplete="off">
         </div>
     </div>
+    @error('duration')
+      <span
+    @enderror
     
     <div class="form-group col-sm-15 my-3">
       <label for="exampleFormControlInput1">Link do curso</label>
