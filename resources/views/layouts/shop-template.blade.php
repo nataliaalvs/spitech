@@ -12,6 +12,7 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="{{ asset('assets/shop-template/css/styles.css') }}" rel="stylesheet" />
+        @yield('styles')
     </head>
     <body>
         <!-- Navigation-->
@@ -38,7 +39,7 @@
                     <form class="d-flex" action="{{route('login')}}">
                         <button class="btn btn-outline-dark" type="submit">
                             {{-- <i class="bi-collection-play-fill me-1"></i> --}}
-                            Login
+                            Entrar
                         </button>
                     </form>
                 </div>
@@ -54,7 +55,10 @@
             </div>
         </header>
         <!-- Section-->
-        @yield('content')
+        <div style="min-height: 50vh">
+            @yield('content')
+
+        </div>
         {{-- <section class="py-5">
             <div class="container px-4 px-lg-5 mt-5">
                 <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
@@ -259,7 +263,7 @@
         </section> --}}
         <!-- Footer-->
         <footer class="py-5 bg-dark">
-            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2021</p></div>
+            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Marlison & Natália 2021</p></div>
         </footer>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>

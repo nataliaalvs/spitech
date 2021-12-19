@@ -5,7 +5,7 @@
 @endsection
 
 @section('formulario')
-<form action="{{route('post.store')}}" method="POST" class=" offset-md-3 my-4">
+<form action="{{ route('post.store') }}" method="POST" class=" offset-md-3 my-4">
     @csrf
     <div class="form-group col-sm-8 my-3">
       <label for="exampleFormControlInput1">Título</label>

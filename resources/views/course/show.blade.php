@@ -12,8 +12,14 @@
 @endsection
 @section('content')
 <div class="my-4">
-    <pre style="text-align: center">
+    <pre style="text-align: center; font-size: 1.5rem">
 {{ $course->description }}
     </pre>
+</div>
+<div class="container text-secondary my-4" style="text-align: end">
+    Criado por {{ $nameUser }}
+</div>
+<div id="posts" class="container">
+
 </div>
 @endsection

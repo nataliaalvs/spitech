@@ -12,9 +12,7 @@ class CreateCoursesTable extends Migration{
             $table->float('price');
             $table->string('name');
             $table->string('link');
-            $table->string('description');
-            $table->integer('in_progress')->default(0);
-            $table->boolean('acquired')->default(0);
+            $table->string('description');            
             $table->integer('duration');
             $table->foreign('user_id')->references('id')->on('users');
             $table->timestamps();
