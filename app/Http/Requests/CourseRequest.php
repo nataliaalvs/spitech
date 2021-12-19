@@ -20,7 +20,7 @@ class CourseRequest extends FormRequest{
         ];
     }
 
-    public function messages (){
+    public function messages(){
         return [
             'name.required' => 'O campo nome é obrigatório',
             'description.required' => 'O campo descrição é obrigatório',
