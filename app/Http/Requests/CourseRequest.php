@@ -16,7 +16,7 @@ class CourseRequest extends FormRequest{
             'description' => 'required',
             'price' => 'required|numeric',
             'duration' => 'required|numeric',
-            'link' => 'required',
+            'link' => 'required'
         ];
     }
 
@@ -26,7 +26,7 @@ class CourseRequest extends FormRequest{
             'description.required' => 'O campo descrição é obrigatório',
             'price.required' => 'O campo preço é obrigatório',
             'duration.required' => 'O campo duração é obrigatório',
-            'link.required' => 'O campo link é obrigatório',
+            'link.required' => 'O campo link é obrigatório'
         ];
     }
 }
