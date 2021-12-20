@@ -24,3 +24,9 @@ window.addEventListener('DOMContentLoaded', event => {
     }
 
 });
+
+/*title js */
+/*-----
+Spanizer
+- Wraps letters with spans, for css animations
+-----*/
