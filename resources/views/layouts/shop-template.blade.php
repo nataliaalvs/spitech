@@ -18,6 +18,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
 
         <link href="{{ asset('assets/shop-template/css/styles.css') }}" rel="stylesheet" />
+        <link rel="stylesheet" href="{{asset('assets/shop-template/css/title.css')}}">
         @yield('styles')
     </head>
     <body>

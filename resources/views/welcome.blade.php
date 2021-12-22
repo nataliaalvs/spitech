@@ -5,7 +5,7 @@
 @endsection
 
 @section('title-banner')
-spitech
+<h1 class="welcome">Spitech</h1>
 @endsection
 
 @section('title-page')
